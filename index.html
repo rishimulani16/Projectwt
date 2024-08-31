@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple YouTube</title>
+    <link rel="stylesheet" href="youtube.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">YouTube</div>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search">
+            <button id="search-btn">Search</button>
+        </div>
+    </div>
+    
+    <div id="main-content">
+        <div id="sidebar">
+            <ul>
+                <li>Home</li>
+                <li>Trending</li>
+                <li>Subscriptions</li>
+                <li>Library</li>
+            </ul>
+        </div>
+        
+        <div id="video-section">
+            <div id="video-player">
+                <video id="current-video" controls>
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h2 id="video-title">Sample Video Title</h2>
+            </div>
+            
+            <div id="video-list">
+                <div class="video-item" onclick="playVideo('sample-video.mp4', 'Video 1 Title')">
+                    <img src="images.png" alt="Thumbnail 1">
+                    <p>Video 1 </p>
+                </div>
+                <div class="video-item" onclick="playVideo('sample-video2.mp4', 'Video 2 Title')">
+                    <img src="images.png" alt="Thumbnail 2">
+                    <p>Video 2 </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="script1.js"></script>
+</body>
+</html>
